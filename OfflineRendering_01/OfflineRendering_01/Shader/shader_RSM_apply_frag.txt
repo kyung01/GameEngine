@@ -1,0 +1,94 @@
+#version 120
+uniform sampler2D 
+	texture_position,texture_depth,
+	texture_normal, texture_flux;
+uniform vec3 world_size;
+uniform float RAND_SEED;
+
+uniform vec4 material_color;
+
+in vec3 f_pos_world;
+in vec3 f_normal;
+in vec4 f_pos_from_light; // position looked from light
+
+
+vec3 kNormalize(vec3 normal){
+	float length = .000001 + length(normal);
+	return normal / length;
+}
+vec3 calculate(
+	vec3 me,	vec3 me_normal,
+	vec3 other,	vec3 other_normal, vec3 other_flux){
+	vec3 me_other = other-me;
+	vec3 other_me = me-other;
+	float a = max(0, dot(me_normal, me_other));
+	float b = max(0, dot(other_normal, other_me));
+	//return other_flux * (a * b );
+	float c = length(me-other);
+	//return other_flux * (a * b / pow(c,4)  )  ;// * max(0,(1-pow(c,2) ) ) ;
+	return other_flux * (a*b / (c*c)  ) * max(0,(1- pow(c,2) ) );// vec3(a*b,0,0);
+	return other_flux  * max(0,dot(me_normal, kNormalize(me_other) ));
+	
+}
+vec3 calculate(
+			vec3 vert_world, vec3 vert_fromLight, vec3 vert_normal, 
+			vec2 sample_diff ){
+	
+	vec2 sample_position =  vert_fromLight.xy + sample_diff;
+	vec3 other_position =	texture2D(texture_position,sample_position).xyz * world_size;
+	vec3 other_depth	=	texture2D(texture_depth,sample_position).xyz;
+	vec3 other_normal	=	texture2D(texture_normal,sample_position).xyz;
+	vec3 other_flux		=	texture2D(texture_flux,sample_position).xyz;
+
+	other_normal -= vec3(.5,.5,.5);
+	other_normal *= 2.0f;
+
+	vec3 color = calculate(vert_world, vert_normal, other_position,other_normal,other_flux )  ;
+	return color;
+	
+
+}
+float rand(vec2 co){
+    return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
+}
+float rand(float a, float b){
+	return rand(vec2(a,b));
+}
+
+void main()
+{
+	vec3 color;
+	//color = material_color.xyz *.5f;
+	color = vec3(.1,.1,.1);
+	float z_light = texture2D(texture_depth,f_pos_from_light.xy).z; //closest dist from light
+	float z = f_pos_from_light.z -0.04;
+	if(z > z_light){
+		color *= .1f;
+		//color += vec3(.1f,.1f,.1f);
+	}
+
+
+	float power = 1.0f;
+	float distance = .07;
+	float distance_half = distance / 2;
+	float dimension_per_distance = 160;
+	float dimension = distance * dimension_per_distance;
+	float i_max = dimension, j_max = dimension;
+	for(float i = 0; i < i_max; i++){
+		for(float j = 0 ; j < j_max;j++){
+			float width = distance / i_max;
+			float height = distance / j_max;
+			vec2 position =  vec2(-distance_half + distance * (i/i_max), -distance_half + distance *(j/j_max));
+			color +=  calculate(f_pos_world, f_pos_from_light.xyz ,f_normal, position) * (dimension*dimension*.002f);
+		}
+	}
+	//color /= i_max;
+	//color *= power;
+
+
+	//color = material_color;
+	
+	//else;//gl_FragColor = vec4(visibility,visibility,visibility,1);
+
+	gl_FragColor = vec4(color ,1);
+}

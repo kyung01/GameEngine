@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Files\AssimpScene.cpp" />
+    <ClCompile Include="Files\GameMain.cpp" />
+    <ClCompile Include="Files\KGLFW\GLFW_Context.cpp" />
+    <ClCompile Include="Files\KGraphic\Camera.cpp" />
+    <ClCompile Include="Files\KGraphic\GraphicMain.cpp" />
+    <ClCompile Include="Files\KGraphic\KGLFW\GLFW_GraphicMain.cpp" />
+    <ClCompile Include="Files\KGraphic\KGLFW\Shader_GLFW.cpp" />
+    <ClCompile Include="Files\KGraphic\Object_KGraphic.cpp" />
+    <ClCompile Include="Files\KGraphic\Shader.cpp" />
+    <ClCompile Include="Files\KOpenGL\KVertexArrayObject.cpp" />
+    <ClCompile Include="Files\KOpenGL\OpenGLMain.cpp" />
+    <ClCompile Include="Files\KOpenGL\Program_Default.cpp" />
+    <ClCompile Include="Files\KOpenGL\Shader.cpp" />
+    <ClCompile Include="Files\KOpenGL\Shader_Element.cpp" />
+    <ClCompile Include="Files\KUtility\Easy_OpenGL.cpp" />
+    <ClCompile Include="Files\KUtility\Easy_STD.cpp" />
+    <ClCompile Include="Files\KWorld\Object.cpp" />
+    <ClCompile Include="Files\KWorld\Script.cpp" />
+    <ClCompile Include="Files\KWorld\World.cpp" />
+    <ClCompile Include="Files\Linker\Graphic_OpenGL.cpp" />
+    <ClCompile Include="Files\PlayerInput.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Files\AssimpScene.h" />
+    <ClInclude Include="Files\GameEye.h" />
+    <ClInclude Include="Files\GameMain.h" />
+    <ClInclude Include="Files\Include_WorldObjectScript.h" />
+    <ClInclude Include="Files\InputCall.h" />
+    <ClInclude Include="Files\KGLFW\GLEW_GLFW.h" />
+    <ClInclude Include="Files\KGLFW\GLFW_Context.h" />
+    <ClInclude Include="Files\KGLFW\I_GLFW_Calls.h" />
+    <ClInclude Include="Files\KGraphic\Camera.h" />
+    <ClInclude Include="Files\KGraphic\GraphicMain.h" />
+    <ClInclude Include="Files\KGraphic\KGLFW\GraphicMain.h" />
+    <ClInclude Include="Files\KGraphic\KGLFW\Shader.h" />
+    <ClInclude Include="Files\KGraphic\Model.h" />
+    <ClInclude Include="Files\KGraphic\Object.h" />
+    <ClInclude Include="Files\KGraphic\Scene.h" />
+    <ClInclude Include="Files\KGraphic\Shader.h" />
+    <ClInclude Include="Files\KOpenGL\KVertexArrayObject.h" />
+    <ClInclude Include="Files\KOpenGL\OpenGLCalls.h" />
+    <ClInclude Include="Files\KOpenGL\OpenGLMain.h" />
+    <ClInclude Include="Files\KOpenGL\Program_Default.h" />
+    <ClInclude Include="Files\KOpenGL\Shader.h" />
+    <ClInclude Include="Files\KOpenGL\Shader_Element.h" />
+    <ClInclude Include="Files\KUtility\Easy_GLSL.h" />
+    <ClInclude Include="Files\KUtility\Easy_OpenGL.h" />
+    <ClInclude Include="Files\KUtility\Easy_STD.h" />
+    <ClInclude Include="Files\KWorld\Object.h" />
+    <ClInclude Include="Files\KWorld\Script.h" />
+    <ClInclude Include="Files\KWorld\World.h" />
+    <ClInclude Include="Files\Linker\Graphic_OpenGL.h" />
+    <ClInclude Include="Files\PlayerInput.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B925466-4408-4D98-A792-6BC5B82FB285}</ProjectGuid>
+    <RootNamespace>OfflineRendering_01</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\OfflineRendering_01\OfflineRendering_01\Files;C:\Users\devbl\Desktop\C++ Libs\assimp\include;C:\Users\devbl\Desktop\C++ Libs\opencv\build\include;C:\Users\devbl\Desktop\OpenGL Libraries\glm;C:\Users\devbl\Desktop\OpenGL Libraries\glfw-3.1.2.bin.WIN32\include;C:\Users\devbl\Desktop\OpenGL Libraries\glew-1.13.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\devbl\Desktop\C++ Libs\assimp\lib;C:\Users\devbl\Desktop\C++ Libs\opencv\build\x86\vc14 built\lib\Release;C:\Users\devbl\Desktop\OpenGL Libraries\glew-1.13.0\lib\Win32;C:\Users\devbl\Desktop\OpenGL Libraries\glfw-3.1.2.bin.WIN32\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glfw3.lib;glu32.lib;opengl32.lib;opencv_calib3d310.lib;opencv_core310.lib;opencv_features2d310.lib;opencv_flann310.lib;opencv_highgui310.lib;opencv_imgcodecs310.lib;opencv_imgproc310.lib;opencv_ml310.lib;opencv_objdetect310.lib;opencv_photo310.lib;opencv_stitching310.lib;opencv_superres310.lib;opencv_ts310.lib;opencv_video310.lib;opencv_videoio310.lib;opencv_videostab310.lib;assimp-vc130-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\OfflineRendering_01\OfflineRendering_01\Files;C:\Users\devbl\Desktop\C++ Libs\assimp\include;C:\Users\devbl\Desktop\C++ Libs\opencv\build\include;C:\Users\devbl\Desktop\OpenGL Libraries\glm;C:\Users\devbl\Desktop\OpenGL Libraries\glfw-3.1.2.bin.WIN32\include;C:\Users\devbl\Desktop\OpenGL Libraries\glew-1.13.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\devbl\Desktop\C++ Libs\assimp\lib;C:\Users\devbl\Desktop\C++ Libs\opencv\build\x86\vc14 built\lib\Release;C:\Users\devbl\Desktop\OpenGL Libraries\glew-1.13.0\lib\Win32;C:\Users\devbl\Desktop\OpenGL Libraries\glfw-3.1.2.bin.WIN32\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glfw3.lib;glu32.lib;opengl32.lib;opencv_calib3d310.lib;opencv_core310.lib;opencv_features2d310.lib;opencv_flann310.lib;opencv_highgui310.lib;opencv_imgcodecs310.lib;opencv_imgproc310.lib;opencv_ml310.lib;opencv_objdetect310.lib;opencv_photo310.lib;opencv_stitching310.lib;opencv_superres310.lib;opencv_ts310.lib;opencv_video310.lib;opencv_videoio310.lib;opencv_videostab310.lib;assimp-vc130-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

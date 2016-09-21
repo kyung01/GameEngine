@@ -1,0 +1,37 @@
+﻿Build started 9/15/2016 11:57:13 AM.
+     1>Project "C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\OfflineRendering_01\OfflineRendering_01\OfflineRendering_01.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(936,5): warning MSB8027: Two or more files with the name of Shader.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Files\KGraphic\Shader.cpp, Files\KOpenGL\Shader.cpp.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\OfflineRendering_01\OfflineRendering_01\Files" /I"C:\Users\devbl\Desktop\C++ Libs\assimp\include" /I"C:\Users\devbl\Desktop\C++ Libs\opencv\build\include" /I"C:\Users\devbl\Desktop\OpenGL Libraries\glm" /I"C:\Users\devbl\Desktop\OpenGL Libraries\glfw-3.1.2.bin.WIN32\include" /I"C:\Users\devbl\Desktop\OpenGL Libraries\glew-1.13.0\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Files\KGraphic\KGLFW\Shader_GLFW.cpp
+         Shader_GLFW.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\OfflineRendering_01\Debug\OfflineRendering_01.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\devbl\Desktop\C++ Libs\assimp\lib" /LIBPATH:"C:\Users\devbl\Desktop\C++ Libs\opencv\build\x86\vc14 built\lib\Release" /LIBPATH:"C:\Users\devbl\Desktop\OpenGL Libraries\glew-1.13.0\lib\Win32" /LIBPATH:"C:\Users\devbl\Desktop\OpenGL Libraries\glfw-3.1.2.bin.WIN32\lib-vc2015" glew32.lib glfw3.lib glu32.lib opengl32.lib opencv_calib3d310.lib opencv_core310.lib opencv_features2d310.lib opencv_flann310.lib opencv_highgui310.lib opencv_imgcodecs310.lib opencv_imgproc310.lib opencv_ml310.lib opencv_objdetect310.lib opencv_photo310.lib opencv_stitching310.lib opencv_superres310.lib opencv_ts310.lib opencv_video310.lib opencv_videoio310.lib opencv_videostab310.lib "assimp-vc130-mt.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\OfflineRendering_01\Debug\OfflineRendering_01.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\OfflineRendering_01\Debug\OfflineRendering_01.lib" /MACHINE:X86 Debug\AssimpScene.obj
+         Debug\GameMain.obj
+         Debug\GLFW_Context.obj
+         Debug\Camera.obj
+         Debug\GraphicMain.obj
+         Debug\GLFW_GraphicMain.obj
+         Debug\Shader_GLFW.obj
+         Debug\Object_KGraphic.obj
+         Debug\Shader.obj
+         Debug\KVertexArrayObject.obj
+         Debug\OpenGLMain.obj
+         Debug\Program_Default.obj
+         Debug\Shader.obj
+         Debug\Shader_Element.obj
+         Debug\Easy_OpenGL.obj
+         Debug\Easy_STD.obj
+         Debug\Object.obj
+         Debug\Script.obj
+         Debug\World.obj
+         Debug\Graphic_OpenGL.obj
+         Debug\PlayerInput.obj
+         Debug\main.obj
+     1>Debug\Shader.obj : warning LNK4042: object specified more than once; extras ignored
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         OfflineRendering_01.vcxproj -> C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\OfflineRendering_01\Debug\OfflineRendering_01.exe
+     1>Done Building Project "C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\OfflineRendering_01\OfflineRendering_01\OfflineRendering_01.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.39
