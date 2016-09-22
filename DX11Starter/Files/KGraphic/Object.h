@@ -1,7 +1,7 @@
 #pragma once
 #include <memory>
 #include "glm\glm.hpp"
-#include "KGraphic\Shader.h"
+#include "Shader.h"
 namespace Graphic {
 	class Object {
 	public:

@@ -1,4 +1,4 @@
-#include "KGraphic\Object.h"
+#include "Object.h"
 Graphic::Object::Object() {
 
 }

@@ -1,4 +1,4 @@
-#include "KGraphic\GraphicMain.h"
+#include "GraphicMain.h"
 void Graphic::GraphicMain::processObject(Object obj) {
 	if (obj.shader != NULL) {
 

@@ -1,7 +1,7 @@
 #pragma once
 #include <list>
-#include "KGraphic\Camera.h"
-#include "KGraphic\Object.h"
+#include "Camera.h"
+#include "Object.h"
 namespace Graphic {
 	class Scene {
 	public:
