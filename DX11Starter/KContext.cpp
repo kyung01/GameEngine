@@ -251,7 +251,7 @@ void KContext::Draw(float deltaTime, float totalTime)
 		D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL,
 		1.0f,
 		0);
-
+	/*
 	XMVECTOR pos = XMVector4Transform(XMVectorSet(0,0,0,1), XMLoadFloat4x4(&world.cam.pos));
 	XMVECTOR dir = XMVector4Transform(XMVectorSet(0, 0, 1, 1) , XMLoadFloat4x4(&world.cam.rotation));
 	XMVECTOR up = XMVectorSet(0, 1, 0, 0);
@@ -260,6 +260,8 @@ void KContext::Draw(float deltaTime, float totalTime)
 		dir,     // Direction the camera is looking
 		up);     // "Up" direction in 3D space (prevents roll)
 	XMStoreFloat4x4(&viewMatrix, XMMatrixTranspose(V)); // Transpose for HLSL!
+	*/
+
 	// Send data to shader variables
 	//  - Do this ONCE PER OBJECT you're drawing
 	//  - This is actually a complex process of copying data to a local buffer
@@ -297,7 +299,9 @@ void KContext::Draw(float deltaTime, float totalTime)
 
 	DirectX::XMFLOAT4X4 worldMatrix_temp;
 	int count = 0;
+
 	for (auto it = world.objs.begin(); it != world.objs.end(); it++) {
+		/*
 		XMStoreFloat4x4(&worldMatrix_temp, XMMatrixTranspose(XMLoadFloat4x4(&it->pos))); // Transpose for HLSL!
 		vertexShader->SetMatrix4x4("world", worldMatrix_temp);
 		vertexShader->CopyAllBufferData();
@@ -310,6 +314,7 @@ void KContext::Draw(float deltaTime, float totalTime)
 		case 2:
 			renderMesh(triangle.get()); break;
 		}
+		*/
 	}
 
 
@@ -364,11 +369,12 @@ void KContext::OnMouseMove(WPARAM buttonState, int x, int y)
 	float scale = .001f;
 	float disX = x - prevMousePos.x, disY = y - prevMousePos.y;
 	if (disX*disX + disY*disY < 5000) {
-
+		/*
 		XMMATRIX rotation = XMLoadFloat4x4(&world.cam.rotation);
 		XMStoreFloat4x4(&world.cam.rotation, rotation * XMMatrixRotationAxis(XMVectorSet(0, 1, 0, 1), disX*scale)); // Transpose for HLSL!
 		rotation = XMLoadFloat4x4(&world.cam.rotation);
 		XMStoreFloat4x4(&world.cam.rotation, rotation * XMMatrixRotationAxis(XMVectorSet(1, 0, 0, 1), disY*scale)); // Transpose for HLSL!
+		*/
 		
 	}
 

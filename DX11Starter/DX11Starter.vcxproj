@@ -126,6 +126,7 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="DXCore.cpp" />
+    <ClCompile Include="Files\Input\PlayerInput.cpp" />
     <ClCompile Include="Files\KGraphic\Camera.cpp">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GraphicCamera</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GraphicCamera</ObjectFileName>
@@ -146,6 +147,8 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="DXCore.h" />
+    <ClInclude Include="Files\Input\InputCall.h" />
+    <ClInclude Include="Files\Input\PlayerInput.h" />
     <ClInclude Include="Files\KGraphic\Camera.h" />
     <ClInclude Include="Files\KGraphic\GraphicMain.h" />
     <ClInclude Include="Files\KGraphic\Model.h" />
