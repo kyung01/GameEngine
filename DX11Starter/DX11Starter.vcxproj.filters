@@ -36,9 +36,6 @@
     <ClCompile Include="DXCore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SimpleShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -46,9 +43,6 @@
       <Filter>Source Files\Graphic</Filter>
     </ClCompile>
     <ClCompile Include="WorldMain.cpp">
-      <Filter>Source Files\World</Filter>
-    </ClCompile>
-    <ClCompile Include="Object.cpp">
       <Filter>Source Files\World</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
@@ -66,6 +60,12 @@
     <ClCompile Include="Files\KGraphic\Shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="KContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DXCore.h">
@@ -81,9 +81,6 @@
       <Filter>Header Files\Graphic</Filter>
     </ClInclude>
     <ClInclude Include="WorldMain.h">
-      <Filter>Header Files\World</Filter>
-    </ClInclude>
-    <ClInclude Include="Object.h">
       <Filter>Header Files\World</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
@@ -110,8 +107,11 @@
     <ClInclude Include="Files\KGraphic\Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="KContext.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Header Files\World</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

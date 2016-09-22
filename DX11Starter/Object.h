@@ -3,6 +3,8 @@
 #include <DirectXMath.h>
 #include	"Material.h"
 using namespace DirectX;
+/*
+*/
 namespace World {
 	class Object {
 	protected:

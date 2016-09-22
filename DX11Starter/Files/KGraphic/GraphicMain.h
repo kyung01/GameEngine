@@ -9,7 +9,7 @@ namespace Graphic {
 	class GraphicMain {
 	private:
 		void rendering(Scene scene);
-		void processObject(Object obj);
+		void processObject(DumbObject obj);
 	protected:
 		glm::mat4 matProjection, matView, matModel;
 		virtual void processCamera(Camera cam) = 0;

@@ -1,5 +1,5 @@
 #include "GraphicMain.h"
-void Graphic::GraphicMain::processObject(Object obj) {
+void Graphic::GraphicMain::processObject(DumbObject obj) {
 	if (obj.shader != NULL) {
 
 		Graphic::Shader *shader = shaders[obj.shader->type];

@@ -1,6 +1,6 @@
 
 #include <Windows.h>
-#include "Game.h"
+#include "KContext.h"
 
 // --------------------------------------------------------
 // Entry point for a graphical (non-console) Windows application
@@ -20,22 +20,22 @@ int WINAPI WinMain(
 
 	// Create the Game object using
 	// the app handle we got from WinMain
-	Game dxGame(hInstance);
+	KContext dxContext(hInstance);
 
 	// Result variable for function calls below
 	HRESULT hr = S_OK;
 
 	// Attempt to create the window for our program, and
 	// exit early if something failed
-	hr = dxGame.InitWindow();
+	hr = dxContext.InitWindow();
 	if(FAILED(hr)) return hr;
 
 	// Attempt to initialize DirectX, and exit
 	// early if something failed
-	hr = dxGame.InitDirectX();
+	hr = dxContext.InitDirectX();
 	if(FAILED(hr)) return hr;
 
 	// Begin the message and game loop, and then return
 	// whatever we get back once the game loop is over
-	return dxGame.Run();
+	return dxContext.Run();
 }

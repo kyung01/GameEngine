@@ -136,7 +136,7 @@
     </ClCompile>
     <ClCompile Include="Files\KGraphic\Object_KGraphic.cpp" />
     <ClCompile Include="Files\KGraphic\Shader.cpp" />
-    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="KContext.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Object.cpp" />
@@ -152,7 +152,7 @@
     <ClInclude Include="Files\KGraphic\Object.h" />
     <ClInclude Include="Files\KGraphic\Scene.h" />
     <ClInclude Include="Files\KGraphic\Shader.h" />
-    <ClInclude Include="Game.h" />
+    <ClInclude Include="KContext.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="WorldMain.h" />

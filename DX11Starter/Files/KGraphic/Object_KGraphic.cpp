@@ -1,4 +1,4 @@
 #include "Object.h"
-Graphic::Object::Object() {
+Graphic::DumbObject::DumbObject() {
 
 }

@@ -1,9 +1,26 @@
-﻿Build started 9/21/2016 10:43:28 PM.
+﻿Build started 9/21/2016 10:58:47 PM.
      1>Project "C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\DX11Starter\DX11Starter.vcxproj" on node 2 (Build target(s)).
-     1>Link:
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\Users\devbl\Desktop\DX11Starter\Files /I"C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\DX11Starter\Include" /ZI /nologo /W3 /WX- /sdl- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt Object.cpp
+         Object.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\DX11Starter\Debug\DX11Starter.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\DX11Starter\Debug\DX11Starter.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\DX11Starter\Debug\DX11Starter.lib" /MACHINE:X86 Debug\Camera.obj
+         Debug\DXCore.obj
+         Debug\Object_KGraphic.obj
+         Debug\Shader.obj
+         Debug\KContext.obj
+         Debug\Main.obj
+         Debug\Mesh.obj
+         Debug\Object.obj
+         Debug\SimpleShader.obj
+         Debug\WorldMain.obj
+         GraphicCamera
+         Graphic_GraphicMain
          DX11Starter.vcxproj -> C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\DX11Starter\Debug\DX11Starter.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\bscmake.exe /nologo /o"C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\DX11Starter\Debug\DX11Starter.bsc" /n Debug\Camera.sbr Debug\DXCore.sbr Debug\Camera.sbr Debug\GraphicMain.sbr Debug\Object_KGraphic.sbr Debug\Shader.sbr Debug\KContext.sbr Debug\Main.sbr Debug\Mesh.sbr Debug\Object.sbr Debug\SimpleShader.sbr Debug\WorldMain.sbr
      1>Done Building Project "C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\DX11Starter\DX11Starter.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.63
+Time Elapsed 00:00:05.56
