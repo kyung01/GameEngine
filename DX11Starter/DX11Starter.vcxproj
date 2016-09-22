@@ -75,7 +75,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
       <BrowseInformation>true</BrowseInformation>
-      <AdditionalIncludeDirectories>C:\Users\devbl\Desktop\DX11Starter\Files;C:\Users\devbl\OneDrive\문서\GitHub\GameEngine\DX11Starter\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
