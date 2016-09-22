@@ -1,12 +1,13 @@
 #pragma once
 
-#include "DXCore.h"
-#include "SimpleShader.h"
 #include <DirectXMath.h>
-#include "Mesh.h"
 #include <memory>
 #include <list>
+#include "Mesh.h"
+#include "DXCore.h"
+#include "SimpleShader.h"
 #include "WorldMain.h"
+#include "Input\PlayerInput.h"
 
 class KContext
 	: public DXCore
@@ -15,31 +16,6 @@ class KContext
 private:
 	World::WorldMain world;
 
-	// Initialization helper methods - feel free to customize, combine, etc.
-	void LoadShaders(); 
-	void CreateMatrices();
-	void CreateBasicGeometry();
-
-	// Buffers to hold actual geometry data
-	//ID3D11Buffer* vertexBuffer;
-	//ID3D11Buffer* indexBuffer;
-
-	// Wrappers for DirectX shaders to provide simplified functionality
-	SimpleVertexShader* vertexShader;
-	SimplePixelShader* pixelShader;
-
-	// The matrices to go from model space to screen space
-	DirectX::XMFLOAT4X4 worldMatrix;
-	DirectX::XMFLOAT4X4 viewMatrix;
-	DirectX::XMFLOAT4X4 projectionMatrix;
-
-	// Keeps track of the old mouse position.  Useful for 
-	// determining how far the mouse moved in a single frame.
-	POINT prevMousePos;
-	std::unique_ptr<Graphic::Mesh>
-		triangle, square, diamond;
-	void renderMesh(Graphic::Mesh* mesh);
-	void renderMesh(Graphic::Mesh mesh);
 
 public:
 	KContext(HINSTANCE hInstance);

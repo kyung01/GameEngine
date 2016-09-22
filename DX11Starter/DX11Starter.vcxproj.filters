@@ -122,6 +122,9 @@
     <ClInclude Include="Files\Input\InputCall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Files\Input\InputEnums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="PixelShader.hlsl">
