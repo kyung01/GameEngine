@@ -164,12 +164,6 @@
     <ClInclude Include="Files\KGraphic\Shader.h" />
     <ClInclude Include="Files\UI\imgui_impl_dx11.h" />
     <ClInclude Include="Files\UI\UIContext.h" />
-    <ClInclude Include="Include\imgui\imconfig.h" />
-    <ClInclude Include="Include\imgui\imgui.h" />
-    <ClInclude Include="Include\imgui\imgui_internal.h" />
-    <ClInclude Include="Include\imgui\stb_rect_pack.h" />
-    <ClInclude Include="Include\imgui\stb_textedit.h" />
-    <ClInclude Include="Include\imgui\stb_truetype.h" />
     <ClInclude Include="KContext.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Object.h" />
