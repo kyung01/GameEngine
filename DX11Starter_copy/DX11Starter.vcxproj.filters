@@ -28,9 +28,6 @@
     <Filter Include="Source Files\World">
       <UniqueIdentifier>{e9f9dc7b-e0de-428b-95bf-ec13476558fd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\imgui_demo">
-      <UniqueIdentifier>{7f1f9582-98eb-4e68-bfde-59dfeb6a2e5f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Externals">
       <UniqueIdentifier>{5ec138f3-3c1f-4acf-8d08-932e6948b8a2}</UniqueIdentifier>
     </Filter>
@@ -84,14 +81,14 @@
     <ClCompile Include="Include\imgui\imgui_demo.cpp">
       <Filter>Externals\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="Files\imguiDemo\imgui_demo_main.cpp">
-      <Filter>Externals\imgui</Filter>
-    </ClCompile>
     <ClCompile Include="Include\imgui\imgui_draw.cpp">
       <Filter>Externals\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="Files\imguiDemo\imgui_impl_dx11.cpp">
-      <Filter>Externals\imgui</Filter>
+    <ClCompile Include="Files\UI\imgui_demo_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Files\UI\imgui_impl_dx11.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -149,9 +146,6 @@
     <ClInclude Include="Files\Input\InputEnums.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Files\imguiDemo\imgui_impl_dx11.h">
-      <Filter>Header Files\imgui_demo</Filter>
-    </ClInclude>
     <ClInclude Include="Include\imgui\imconfig.h">
       <Filter>Externals\imgui</Filter>
     </ClInclude>
@@ -169,6 +163,12 @@
     </ClInclude>
     <ClInclude Include="Include\imgui\stb_truetype.h">
       <Filter>Externals\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Files\UI\UIContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Files\UI\imgui_impl_dx11.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

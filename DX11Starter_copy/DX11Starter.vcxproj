@@ -126,8 +126,6 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="DXCore.cpp" />
-    <ClCompile Include="Files\imguiDemo\imgui_impl_dx11.cpp" />
-    <ClCompile Include="Files\imguiDemo\imgui_demo_main.cpp" />
     <ClCompile Include="Files\Input\PlayerInput.cpp" />
     <ClCompile Include="Files\KGraphic\Camera.cpp">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GraphicCamera</ObjectFileName>
@@ -139,6 +137,8 @@
     </ClCompile>
     <ClCompile Include="Files\KGraphic\Object_KGraphic.cpp" />
     <ClCompile Include="Files\KGraphic\Shader.cpp" />
+    <ClCompile Include="Files\UI\imgui_demo_main.cpp" />
+    <ClCompile Include="Files\UI\imgui_impl_dx11.cpp" />
     <ClCompile Include="Include\imgui\imgui.cpp" />
     <ClCompile Include="Include\imgui\imgui_demo.cpp" />
     <ClCompile Include="Include\imgui\imgui_draw.cpp" />
@@ -152,7 +152,6 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="DXCore.h" />
-    <ClInclude Include="Files\imguiDemo\imgui_impl_dx11.h" />
     <ClInclude Include="Files\Input\InputCall.h" />
     <ClInclude Include="Files\Input\InputEnums.h" />
     <ClInclude Include="Files\Input\PlayerInput.h" />
@@ -162,6 +161,8 @@
     <ClInclude Include="Files\KGraphic\Object.h" />
     <ClInclude Include="Files\KGraphic\Scene.h" />
     <ClInclude Include="Files\KGraphic\Shader.h" />
+    <ClInclude Include="Files\UI\imgui_impl_dx11.h" />
+    <ClInclude Include="Files\UI\UIContext.h" />
     <ClInclude Include="Include\imgui\imconfig.h" />
     <ClInclude Include="Include\imgui\imgui.h" />
     <ClInclude Include="Include\imgui\imgui_internal.h" />
