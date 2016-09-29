@@ -139,6 +139,7 @@
     <ClCompile Include="Files\KGraphic\Shader.cpp" />
     <ClCompile Include="Files\UI\imgui_demo_main.cpp" />
     <ClCompile Include="Files\UI\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Files\UI\UIContext.cpp" />
     <ClCompile Include="Include\imgui\imgui.cpp" />
     <ClCompile Include="Include\imgui\imgui_demo.cpp" />
     <ClCompile Include="Include\imgui\imgui_draw.cpp" />
